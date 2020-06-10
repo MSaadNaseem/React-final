@@ -7,7 +7,6 @@ function Room() {
     let [islit, setLit] = useState(false);
     let [age, setAge] = useState(23);
     function updatelit() {
-        console.log ("Button Clicked");
         setLit(!islit);
     }
     
@@ -21,7 +20,7 @@ function Room() {
       <button onClick={updatelit}>Toggle Light</button>
       <button onClick={()=> {
                                 setAge(++age);
-                            }}
+                      }}
             >Increase Age
        </button>
   </div>
